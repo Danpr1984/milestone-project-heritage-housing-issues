@@ -21,7 +21,7 @@ def page_1_summary_body():
     # Link to README file, so the users can have access to full project documentation
     st.write(
         f"For additional information, please visit and **read** the "
-        f"**[Project's README file](https://github.com/van-essa/heritage-housing-issues)**.")
+        f"**[Project's README file](XXXXXXXXXXXXXXXX)**.")
     
      # copied from README file - "Business Requirements" section
     st.success(
