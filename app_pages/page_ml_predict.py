@@ -5,7 +5,7 @@ from src.data_management import load_house_data, load_pkl_file
 from src.machine_learning.evaluate_regression import regression_performance
 
 
-def page_5_ml_predict_body():
+def page_ml_predict_body():
 
     # Load sale price pipeline files
     version = 'v1'
@@ -51,5 +51,3 @@ def page_5_ml_predict_body():
 
 
 
-# The code above was copied from the Churnometer Project from Code Institute 
-# with some adjustments

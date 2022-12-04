@@ -7,7 +7,7 @@ from src.machine_learning.price_study import regression_per_variable, DisplayCor
 
 
 
-def page_2_sale_price_study_body():
+def page_sale_price_study_body():
 
     
     # load data

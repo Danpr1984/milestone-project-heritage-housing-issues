@@ -5,7 +5,7 @@ from src.data_management import load_house_data, load_pkl_file, load_inherited_h
 from src.machine_learning.predictive_analysis_ui import predict_sale_price
 from datetime import date
 
-def page_3_predict_body():
+def page_predict_body():
 
 	# load predict sale_price files
 	version = 'v1'

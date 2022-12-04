@@ -1,6 +1,6 @@
 import streamlit as st
 
-def page_4_hypothesis_and_validation_body():
+def page_hypothesis_and_validation_body():
 
     st.write("### Project Hypothesis and Validation")
 	
@@ -34,4 +34,3 @@ def page_4_hypothesis_and_validation_body():
     f"that; there is a strong correlation between the two variables."
     )
 
-# The code above was copied from the Churnometer Project from Code Institute with some adjustments

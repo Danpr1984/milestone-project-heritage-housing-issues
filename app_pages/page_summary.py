@@ -1,6 +1,6 @@
 import streamlit as st
 
-def page_1_summary_body():
+def page_summary_body():
 
     st.write("### Quick Project Summary")
 
@@ -14,8 +14,8 @@ def page_1_summary_body():
         f"Lot, Porch, Wood Deck, Year Built`) and its respective sale price for houses "
         f"built between 1872 and 2010.\n"
         f"* There are many abbreviated terms used to describe features of the houses in "
-        f"the data set. For further clarification of the full dataset and explanation"
-        f"of its terms you can click **[HERE](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data)**.\n\n"
+        f"the data set. You can find the dataset with all the information"
+        f"if you click **[HERE](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data)**.\n\n"
         )
     
     # Link to README file, so the users can have access to full project documentation
@@ -33,5 +33,3 @@ def page_1_summary_body():
         f"inherited houses, and any other house in Ames, Iowa. "
         )
 
-# The code above was copied from the Churnometer Project from Code Institute 
-# with some adjustments
