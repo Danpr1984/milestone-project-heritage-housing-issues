@@ -75,7 +75,7 @@ Although my friend has an excellent understanding of property prices in his own 
 * The model success metrics are
   - At least 0.8 for R2 score, on train and test set
 * The ML model is considered a failure if:
-   - After 6 months of usage, the model's predictions are 50% off more than 20% of the time. 
+   - After 6 months of usage, the model's predictions are 30% off more than 25% of the time. 
 * The model output should be a constant value for the **`sale price`**.
 
 
