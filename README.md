@@ -34,29 +34,58 @@
 
 
 ## Business Requirements
-As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
+A good friend, John, has received an inheritance from his deceased mother. John has requested me to help him analyze the value of his properties to make business decisions. The properties are in Ames, Iowa. 
 
-Although your friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that
+Although my friend has an excellent understanding of property prices in his own state and residential area, he fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. He also wants to spot what attributes are more important to possibly remodel them and get a better price for the house.  What makes a house desirable and valuable where he comes from might not be the same in Ames, Iowa. He found a public dataset with house prices for Ames, Iowa, and will provide me with that information. 
 
-* 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
+* 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that. This will help him identify potential improvements in order to increase the price. 
 * 2 - The client is interested in predicting the house sale price from her 4 inherited houses, and any other house in Ames, Iowa.
 
 
+
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+
+* 1 - We suspect houses with better overall quality will have a higher sales price.
+    * A Correlation study can help in this using PPS, Pearson and Spearman methods would help the investigation.
+* 2 - We suspect houses with larger living area will have a higher sales price.
+    * * A Correlation study can help in this using PPS, Pearson and Spearman methods would help the investigation.
+* 3 - We suspect that houses with more recent remodelations will have a higher sales price. 
+    * A Correlation study can help in this using PPS, Pearson and Spearman methods would help the investigation.
+
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks
+* **Business Requirement 1:** Data Visualization and Correlation study
+	* We will inspect the data related to the customer base.
+	* We will conduct a correlation study (Pearson and Spearman) to understand better how the variables are correlated to Churn.
+	* We will plot the main variables against Churn to visualize insights.
+
+* **Business Requirement 2:** Regression, Data Analysis
+	* We want to predict the value of a house. We want to build a regression model to predict the target variable SalePrice.
+	* We want to make plots to visualize the train and test sets predictions vs the actual.
+	* We want to run regression evaluation to demonstrate the R2 Score and Mean Absolute Error.
+
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course 
+### Predict Sale Price
+#### Regression Model 
+* We want an ML model to predict the sale price of a house. A target variable is a serial number. We consider a **regression model**, which is supervised and uni-dimensional.
+* Our ideal outcome is to provide John with reliable insight into what sale price he should expect for his inherited houses or identify what improvements he could implement to increase the price. 
+* The model success metrics are
+  - At least 0.8 for R2 score, on train and test set
+* The ML model is considered a failure if:
+   - After 6 months of usage, the model's predictions are 50% off more than 20% of the time. 
+* The model output should be a constant value for the **`sale price`**.
 
 
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+## Dashboard Design (Streamlit App User Interface)
+
+### Page 1: Quick project summary
+* Quick project summary
+	* Project Terms & Jargon
+	* Describe Project Dataset
+	* State Business Requirements
 
 
 
