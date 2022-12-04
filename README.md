@@ -117,21 +117,14 @@ Although my friend has an excellent understanding of property prices in his own 
 ### Project Hypothesis and Validation
 * Before the analysis, we knew we wanted this page to describe each project hypothesis, the conclusions, and how we validated each. After the data analysis, we can report that:
 
-**1.** We suspect houses with vast `square footing` may have had a higher `sales price`: **Correct**.
-- The correlation study on the **House Sale Price Study** supports that; there is a strong correlation between the two.
+* 1 - We suspect houses with better overall quality will have a higher sales price.
+    * Correct. `Overal Quality` is the feature with the highest correlation with the target variable `Sale Price`.
 
-**2.** We suspect that between houses with similar `square footing`, those with a more recent `Year Built` date may have had a higher `sales price`: **Correct**.
-- The correlation study on the **House Sale Price Study** supports that; 
- there is a moderate correlation between the two. Also noteworthy: houses with a more recent `Year Built` date are usually higher in `Overall Quality` which has stronger correlation to `Sale Price`.
-
-**3.** We suspect that between houses with similar `square footing` and `year built` to date, those with a more recent `Remodel` date may have had a higher `sale price`: **Correct**.
- - The correlation study on the **House Sale Price Study** supports that; there is a weak to moderate correlation between the two. Also noteworthy: there is a relationship between houses with a more recent `Remodel` date being higher in `Overall Quality`.
-
-**4.** We suspect that between houses with similar `square footing`, those with higher `quality and condition` scores may have had a higher `sales price`: **Correct**.
- - The correlation study on the **House Sale Price Study** supports that; there is a strong correlation between the two variables.
-
-
-
+* 2 - We suspect houses with larger living area will have a higher sales price.
+    * Correct. `Ground Living Area` is the feature with the second highest correlation with the target variable `Sale Price`.
+    
+* 3 - We suspect that houses with more recent remodelations will have a higher sales price. 
+    * Correct. Eventhough the  `Remodelation Year` has a low correlation with `Sale Price`, there is a strong correlation between `Remodelation Year` and `Overal Quality` which is the feature with strongest correlation with `Sale Price`
 
 
 ### Page 5
