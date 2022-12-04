@@ -86,7 +86,64 @@ Although my friend has an excellent understanding of property prices in his own 
 	* Project Terms & Jargon
 	* Describe Project Dataset
 	* State Business Requirements
+### Page 2
+### Sale Price Study
+* Before the analysis, we knew we wanted this page to answer business requirement 1, but we couldn't know in advance which plots would need to be displayed.
 
+
+* After data analysis, we agreed with stakeholders that the page will: 
+	* State business requirement 1
+	* Checkbox: data inspection on house attributes (display the number of rows and columns in the data, and display the first ten rows of the data)
+  
+	* Display the most correlated variables to Sale Price and the conclusions
+  
+	* Checkbox: Individual plots showing the Sale Price levels for each correlated variable 
+  
+	* Checkbox: Parallel plot using Sale Price and correlated variables
+  
+
+  
+
+### Page 3
+### House Price Predictor
+* State business requirement 2
+* Set of widgets inputs, which relates to the prospect profile. Each set of inputs is related to a given ML task to predict prospect Sale Price.
+* Run predictive analysis" button that serves the prospect data to our ML pipelines, and predicts if the prospect will increase Sale Price or not, if so, when. For the Sale Price predictions, the page will inform the associated probability for Sale Price level.
+
+
+
+
+### Page 4
+### Project Hypothesis and Validation
+* Before the analysis, we knew we wanted this page to describe each project hypothesis, the conclusions, and how we validated each. After the data analysis, we can report that:
+
+**1.** We suspect houses with vast `square footing` may have had a higher `sales price`: **Correct**.
+- The correlation study on the **House Sale Price Study** supports that; there is a strong correlation between the two.
+
+**2.** We suspect that between houses with similar `square footing`, those with a more recent `Year Built` date may have had a higher `sales price`: **Correct**.
+- The correlation study on the **House Sale Price Study** supports that; 
+ there is a moderate correlation between the two. Also noteworthy: houses with a more recent `Year Built` date are usually higher in `Overall Quality` which has stronger correlation to `Sale Price`.
+
+**3.** We suspect that between houses with similar `square footing` and `year built` to date, those with a more recent `Remodel` date may have had a higher `sale price`: **Correct**.
+ - The correlation study on the **House Sale Price Study** supports that; there is a weak to moderate correlation between the two. Also noteworthy: there is a relationship between houses with a more recent `Remodel` date being higher in `Overall Quality`.
+
+**4.** We suspect that between houses with similar `square footing`, those with higher `quality and condition` scores may have had a higher `sales price`: **Correct**.
+ - The correlation study on the **House Sale Price Study** supports that; there is a strong correlation between the two variables.
+
+
+
+
+
+### Page 5
+### Predict Sale Price
+* Considerations and conclusions after the pipeline is trained
+* Present ML pipeline steps
+* Feature importance
+* Pipeline performance
+
+
+
+---
 
 
 ## Unfixed Bugs
