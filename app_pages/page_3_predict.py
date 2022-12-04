@@ -36,18 +36,18 @@ def page_3_predict_body():
 		predict_sale_price(X_live, sale_price_features, sale_price_pipe)
 
 	st.write("---")
-	st.write("Here is the info for the key values of the clients inherited houses. ")
 	
 	in_df = load_inherited_house_data()
 	filtered_df = in_df[["OverallQual", "GrLivArea", "TotalBsmtSF", "GarageArea", "YearBuilt", "YearRemodAdd"]]	
 		
 	st.write(filtered_df)
-
-	st.write("After running them through the prediction app, their estimated prices are the following. \n\n "
-			"* $126,449 \n"
-			"* $150,322 \n"
-			"* $170,148 \n"
-			"* $181,897 ")
+	st.write("Value for the inherited houses: ")
+	
+	st.write(
+		"* $132,167.00 \n"
+		"* $150,940.00 \n"
+		"* $167,744.40 \n"
+		"* $182,388.00 ")
 	
 	st.write("---")
 
@@ -88,7 +88,7 @@ def DrawInputsWidgets():
 			min_value= int(df[feature].min()*percentageMin), 
 			max_value= int(df[feature].max()*percentageMax),
 			value= int(df[feature].median()), 
-            step= 100
+            step= 10
 			)
 	X_live[feature] = st_widget
 
@@ -99,7 +99,7 @@ def DrawInputsWidgets():
 			min_value= int(df[feature].min()*percentageMin), 
 			max_value= int(df[feature].max()*percentageMax),
 			value= int(df[feature].median()), 
-            step= 50
+            step= 10
 			)
 	X_live[feature] = st_widget
 
@@ -110,7 +110,7 @@ def DrawInputsWidgets():
 			min_value= int(df[feature].min()*percentageMin), 
 			max_value= int(df[feature].max()*percentageMax),
 			value= int(df[feature].median()), 
-            step= 50
+            step= 10
 			)
 	X_live[feature] = st_widget
 

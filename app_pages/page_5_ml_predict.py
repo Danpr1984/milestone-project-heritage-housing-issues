@@ -22,7 +22,7 @@ def page_5_ml_predict_body():
     # Display pipeline training summary conclusions
     st.info(
         f"* We wanted a **Regressor** model to predict the **`Sale Price`** for the houses. "
-        f"Our target **R2 score was above 0.7**, and we tried improving "
+        f"Our target **R2 score was above 0.8**, and we tried improving "
         f"the score using a **PCA Regressor** model but with no success.\n"
 
         f"* The data for the pipeline was tuned by taking several steps "
