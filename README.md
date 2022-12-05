@@ -1,3 +1,8 @@
+# Housing Heritage
+* This is a data analysis project where the objective is to create an  ML Model that predicts the value of a house in Ames, Iowa and to help visualize the most important features considered when predicting that value.
+
+[Live Link to the Project Dashboard](https://github.com/Danpr1984/milestone-project-heritage-housing-issues)
+
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We created then a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
 * The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa; indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
@@ -28,8 +33,6 @@
 |YearBuilt|Original construction date|1872 - 2010|
 |YearRemodAdd|Remodel date (same as construction date if no remodelling or additions)|1950 - 2010|
 |SalePrice|Sale Price|34900 - 755000|
-
-
 
 
 
@@ -87,6 +90,7 @@ Although my friend has an excellent understanding of property prices in his own 
 	* Project Terms & Jargon
 	* Describe Project Dataset
 	* State Business Requirements
+
 ### Page 2
 ### Sale Price Study
 * Before the analysis, we knew we wanted this page to answer business requirement 1, but we couldn't know in advance which plots would need to be displayed.
@@ -103,15 +107,11 @@ Although my friend has an excellent understanding of property prices in his own 
 	* Checkbox: Parallel plot using Sale Price and correlated variables
   
 
-  
-
 ### Page 3
 ### House Price Predictor
 * State business requirement 2
 * Set of widgets inputs, which relates to the prospect profile. Each set of inputs is related to a given ML task to predict prospect Sale Price.
 * Run predictive analysis" button that serves the prospect data to our ML pipelines, and predicts if the prospect will increase Sale Price or not, if so, when. For the Sale Price predictions, the page will inform the associated probability for Sale Price level.
-
-
 
 
 ### Page 4
@@ -135,15 +135,14 @@ Although my friend has an excellent understanding of property prices in his own 
 * Feature importance
 * Pipeline performance
 
-
-
 ---
 
 
 ## Unfixed Bugs
 * I struggled when running the Jupyter Notebooks since a lot of cells would come back with the older version and this took plenty of time.
 * I had a few dependency issues so I had to uninstall and install again a few applications. 
-* I got a 503 server error when trying to open the app in Heroku. 
+* I got a 503 server error when trying to open the app in Heroku. I fixed it by installing protobuf==3.20 and
+  ipywidgets==8.0.2
 
 ## Deployment
 ### Heroku
@@ -159,27 +158,36 @@ Although my friend has an excellent understanding of property prices in his own 
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
+* Matplotlib - Creates various graphs and plots to visualize the data. 
+* Seaborn - For visualizing the data in the Streamlit app with plots, graphs and more.
+* ppscore - Used to study the power predictive score of variables against one another.
+* Streamlit - Creating the app to present the study.
+* Feature-Engine - Major library for engineering the data for the pipeline.
+* Scikit-Learn - Creating the pipeline and applying various algorithms, feature engineering steps and more to it.
+* Numpy - To process arrays that store values, aka data. It facilitates math operations and their vectorization.
+* Pandas and Pandas-Profiling - For data analysis, data exploration, data manipulation, data visualization.
+
 
 
 ## Credits 
 
-* I  
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The template for this project was created by Code Institute
+- A number of functions were built for this project by Code Institute and are credited throughout the notebooks.
+- The dataset is provided by [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data)
+- All learning material was sourced through either the Code Institute program or the documentation of the various libraries used.
+- I used code from my colleagues at the Code Institute Samuel Dainton (https://github.com/Samuel-Dainton/Heritage-Housing-Issues-P5)  to analyse his approach regarding data handling and Vanessa Andersson (https://github.com/van-essa/heritage-housing-issues) with her approach on how to handle the data.  
 
-### Media
+### Tutorials and inspiration
 
-- The photos used on the home and sign-up page are from This Open Source site
-- The images used for the gallery page were taken from this other open-source site
-
+* The walkthrough project 'Churnometer ' from Code Institute [videos](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DDA101+2021_T4/courseware/bba260bd5cc14e998b0d7e9b305d50ec/c83c55ea9f6c4e11969591e1b99c6c35/)
 
 
 ## Acknowledgements (optional)
-* In case you would like to thank the people that provided support through this project.
+* My partner K and my one year old baby T, for all their patience and support.
+* Niel, tutor from Code Institute, for his super efficient support with my inquiries on slack. 
+* Vanessa Andersson, student at Code Institute, for her support and help on Slack for my questions during my studies and PP5.
+
 

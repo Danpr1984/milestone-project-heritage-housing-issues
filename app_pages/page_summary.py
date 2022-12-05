@@ -18,10 +18,6 @@ def page_summary_body():
         f"if you click **[HERE](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data)**.\n\n"
         )
     
-    # Link to README file, so the users can have access to full project documentation
-    st.write(
-        f"For additional information, please visit and **read** the "
-        f"**[Project's README file](https://github.com/Danpr1984/milestone-project-heritage-housing-issues)**.")
     
      # copied from README file - "Business Requirements" section
     st.success(
@@ -33,3 +29,7 @@ def page_summary_body():
         f"inherited houses, and any other house in Ames, Iowa. "
         )
 
+    # Link to README file, so the users can have access to full project documentation
+    st.write(
+        f"For additional information, please visit and **read** the "
+        f"**[Project's README file](https://github.com/Danpr1984/milestone-project-heritage-housing-issues)**.")
