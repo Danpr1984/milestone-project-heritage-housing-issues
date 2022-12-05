@@ -16,7 +16,7 @@ def page_hypothesis_and_validation_body():
     f"correlation with the target variable `Sale Price`.\n\n"
 
     f"**3.**We suspect that houses with more recent remodelations"
-    f"`will have a higher sales price.  "
+    f"`will have a higher sales price. "
     f"**Correct**.\n"
     f"- Eventhough the  `Remodelation Year` has a low correlation with `Sale Price`,"
     f"there is a strong correlation between `Remodelation Year` and `Overal Quality`"
