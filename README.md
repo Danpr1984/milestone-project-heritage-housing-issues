@@ -81,7 +81,8 @@ Although my friend has an excellent understanding of property prices in his own 
 
 ## Dashboard Design (Streamlit App User Interface)
 
-### Page 1: Quick project summary
+### Page 1 
+### Quick project summary
 * Quick project summary
 	* Project Terms & Jargon
 	* Describe Project Dataset
