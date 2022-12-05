@@ -141,7 +141,9 @@ Although my friend has an excellent understanding of property prices in his own 
 
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+* I struggled when running the Jupyter Notebooks since a lot of cells would come back with the older version and this took plenty of time.
+* I had a few dependency issues so I had to uninstall and install again a few applications. 
+* I got a 503 server error when trying to open the app in Heroku. 
 
 ## Deployment
 ### Heroku

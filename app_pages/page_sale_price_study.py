@@ -35,29 +35,29 @@ def page_sale_price_study_body():
 
     # Correlation Study Summary
     st.write(
+        f"* We got a report from ProfileReport which allowed us analyse"
+        f"* the quality of the data and helped us understand which paths to follow"
         f"* Pearson and Spearman tests were first run to determine which variables to "
         f" inspect further. \n"
-        f"* A correlation study was then conducted in the notebook to better understand how "
-        f"those variables were correlated to SalePrice. \n"
-        f"* Further correlation studies were conducted to understand the relation between "
-        f"the quality of a house and the year it was built or remodeled. \n"
-        f"* One final correlation study was conducted to show houses of a similar size "
-        f"across different grades of overall quality against sale price. \n\n"
-        f"Some of the variables that correlate most with Sale Price and were "
-        f"studied further are: **{vars_to_study}** \n\n"
         f"The 2 key variables related to a houses sale price are "
         f"**Overall Quality and Ground Living Area**. "
+        f"* A correlation study was then conducted in the notebook to better understand how "
+        f"those variables were correlated to SalePrice. \n"
+        f"Some of the variables that correlate most with Sale Price and were "
+        f"studied further are: **{vars_to_study}** \n\n"
+        
     )
 
     # Text based on "02 - Churned Customer Study" notebook - "Conclusions and Next steps" section
     st.info(
         f"The correlation tests in the notebook and the plots below "
         f"give the following indications: \n"
-        f"* The SalePrice of a house is typically higher for a house with a larger Ground Living Area \n\n"
-        f"* The SalePrice of a house is typically higher for a house with a higher Overall Quality.  "
-        f"This is also true for houses that are of similar size. \n\n"
-        f"* The SalePrice of a house is typically higher for a house with a more recent Year Built or Remodel. "
-        f"This is due to houses with a more recent Year Built or Remodel typically being higher in Overall Quality. \n\n"
+        f"* The larger the Ground Living Area the higher the SalePrice of a house. \n\n"
+        f"* The higher Overall Quality values the higher the SalePrice of a house. \n\n"
+        f"  This is also true for houses that are of similar size. \n\n"
+        f"* The SalePrice of a house is typically higher for a house with a more recent Year Built. \n\n"
+        f"* Houses that have been recently remodeled have a higher correlation with Overall Quality which\n\n"
+        f" ends up having an impact in the SalePrice \n\n"
     )
 
     # Individual plots per variable
