@@ -145,7 +145,7 @@ Although my friend has an excellent understanding of property prices in his own 
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://housing-predictions-app.herokuapp.com/ 
 * The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
